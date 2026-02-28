@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://drm0iav3d6vlu"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 35.0
+offset_top = 37.0
+offset_right = 96.0
+offset_bottom = 60.0
+text = "Score: 0"
+
+[node name="LivesLabel" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 62.0
+offset_right = 95.0
+offset_bottom = 85.0
+text = "Lives: 3"

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxec2a07c8jgo"]
+
+[ext_resource type="Script" uid="uid://c3qgl2na25c5t" path="res://scenes/win.gd" id="1_r4oei"]
+
+[node name="Win" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r4oei")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1159.0
+offset_bottom = 649.0
+theme_override_font_sizes/font_size = 64
+text = "You Won - Press R to Restart"
+horizontal_alignment = 1
+vertical_alignment = 1

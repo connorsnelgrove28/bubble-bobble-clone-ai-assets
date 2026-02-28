@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://jfb8fqj664ke"]
+
+[ext_resource type="Script" uid="uid://d006qviwiolun" path="res://scenes/main.gd" id="1_o5qli"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 398.0
+offset_top = 298.0
+offset_right = 438.0
+offset_bottom = 338.0
+script = ExtResource("1_o5qli")
+
+[node name="TitleLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -115.0
+offset_top = -4.0
+offset_right = 482.0
+offset_bottom = 84.0
+theme_override_font_sizes/font_size = 64
+text = "Press Enter to Start"
+horizontal_alignment = 1
