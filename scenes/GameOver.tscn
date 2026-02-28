@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2rwjot23refh"]
+[gd_scene load_steps=3 format=3 uid="uid://b2rwjot23refh"]
 
 [ext_resource type="Script" uid="uid://4vdb7kxhwycc" path="res://scripts/game_over.gd" id="1_xeevv"]
+[ext_resource type="FontFile" uid="uid://62ec4gd88ksj" path="res://assets_ai/ThaleahFat.ttf" id="2_qae0b"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -15,7 +16,8 @@ script = ExtResource("1_xeevv")
 layout_mode = 0
 offset_left = -73.0
 offset_top = 1.0
-offset_right = 875.0
+offset_right = 795.0
 offset_bottom = 89.0
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("2_qae0b")
+theme_override_font_sizes/font_size = 70
 text = "Game Over - Press R to Restart"

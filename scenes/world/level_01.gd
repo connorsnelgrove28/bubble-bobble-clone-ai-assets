@@ -34,7 +34,7 @@ func spawn_enemies() -> void:
 		return
 
 	var positions = [
-		Vector2(120, 520),
+		Vector2(100, 520),
 		Vector2(760, 520),
 		Vector2(200, 360),
 		Vector2(680, 360),

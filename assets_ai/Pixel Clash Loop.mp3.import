@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cv1ory0y2bj1s"
+path="res://.godot/imported/Pixel Clash Loop.mp3-38fd0c1d23d1b8596f021d8d8ed6a0e0.mp3str"
+
+[deps]
+
+source_file="res://assets_ai/Pixel Clash Loop.mp3"
+dest_files=["res://.godot/imported/Pixel Clash Loop.mp3-38fd0c1d23d1b8596f021d8d8ed6a0e0.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

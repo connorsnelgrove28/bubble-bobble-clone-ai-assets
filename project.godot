@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="bubble_bobble_clone"
+config/name="bubble_bobble_clone_ai_assets"
 run/main_scene="uid://jfb8fqj664ke"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[gui]
+
+theme/custom_font="uid://62ec4gd88ksj"
 
 [input]
 

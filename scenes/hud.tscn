@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://drm0iav3d6vlu"]
+[gd_scene load_steps=2 format=3 uid="uid://drm0iav3d6vlu"]
+
+[ext_resource type="FontFile" uid="uid://62ec4gd88ksj" path="res://assets_ai/ThaleahFat.ttf" id="1_ahhtf"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -7,6 +9,9 @@ offset_left = 35.0
 offset_top = 37.0
 offset_right = 96.0
 offset_bottom = 60.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 20
 text = "Score: 0"
 
 [node name="LivesLabel" type="Label" parent="."]
@@ -14,4 +19,7 @@ offset_left = 38.0
 offset_top = 62.0
 offset_right = 95.0
 offset_bottom = 85.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 20
 text = "Lives: 3"

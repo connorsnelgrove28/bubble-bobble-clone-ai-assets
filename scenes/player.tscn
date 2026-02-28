@@ -1,15 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://mwxh3j830poi"]
+[gd_scene load_steps=13 format=3 uid="uid://mwxh3j830poi"]
 
-[ext_resource type="Texture2D" uid="uid://du7kn26nlhvw2" path="res://assets/sprites/players/Fall.png" id="1_b26j0"]
 [ext_resource type="Script" uid="uid://cdvs51m8wf8pr" path="res://scripts/player.gd" id="1_n7ghd"]
-[ext_resource type="Texture2D" uid="uid://cal57kmgmmc8t" path="res://assets/sprites/players/Idle.png" id="2_n7ghd"]
-[ext_resource type="Texture2D" uid="uid://dgr8m6bj4brl7" path="res://assets/sprites/players/Jump.png" id="3_nvl01"]
-[ext_resource type="Texture2D" uid="uid://csaru0ma6di04" path="res://assets/sprites/players/Run.png" id="4_ivps1"]
-[ext_resource type="Texture2D" uid="uid://cjmyt58hp3l4j" path="res://assets/sprites/players/Run2.png" id="5_urp6f"]
-[ext_resource type="Texture2D" uid="uid://cyfnaloqt2ka" path="res://assets/sprites/players/Run3.png" id="6_bwjto"]
-[ext_resource type="Texture2D" uid="uid://ksda32ryrg70" path="res://assets/sprites/players/Run4.png" id="7_606se"]
-[ext_resource type="Texture2D" uid="uid://b7xt66yovltnu" path="res://assets/sprites/players/Run5.png" id="8_u1c27"]
-[ext_resource type="Texture2D" uid="uid://doihpqtqcfb83" path="res://assets/sprites/players/Run6.png" id="9_op7ga"]
+[ext_resource type="Texture2D" uid="uid://bpj3d57i841lt" path="res://assets_ai/ai_player/ChatGPT_idle.png" id="4_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://culvsvgg6yc5w" path="res://assets_ai/ai_player/ChatGPT_jump.png" id="5_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://b7h280tvov4m0" path="res://assets_ai/ai_player/ChatGPT_run1.png" id="5_y4r1p"]
+[ext_resource type="Texture2D" uid="uid://dsvtbi2y8i5h3" path="res://assets_ai/ai_player/ChatGPT_run2.png" id="6_d2wvv"]
+[ext_resource type="Texture2D" uid="uid://vyl5mcysi3au" path="res://assets_ai/ai_player/ChatGPT_run3.png" id="7_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://d2bwwr1yf4f77" path="res://assets_ai/ai_player/ChatGPT_run4.png" id="8_jej6c"]
+[ext_resource type="Texture2D" uid="uid://xl5u3fovssge" path="res://assets_ai/ai_player/ChatGPT_run5.png" id="9_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://7rl78sn24tcn" path="res://assets_ai/ai_player/ChatGPT_run6.png" id="10_oprun"]
 [ext_resource type="PackedScene" uid="uid://u0qxaljow55i" path="res://scenes/bubble.tscn" id="11_d2wvv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q13i1"]
@@ -19,7 +18,7 @@ size = Vector2(16, 24)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_b26j0")
+"texture": ExtResource("5_d2wvv")
 }],
 "loop": true,
 "name": &"fall",
@@ -27,7 +26,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_n7ghd")
+"texture": ExtResource("4_y4r1p")
 }],
 "loop": true,
 "name": &"idle",
@@ -35,7 +34,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_nvl01")
+"texture": ExtResource("5_d2wvv")
 }],
 "loop": true,
 "name": &"jump",
@@ -43,22 +42,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_ivps1")
+"texture": ExtResource("5_y4r1p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_urp6f")
+"texture": ExtResource("6_d2wvv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_bwjto")
+"texture": ExtResource("7_3v2ag")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_606se")
+"texture": ExtResource("8_jej6c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_u1c27")
+"texture": ExtResource("9_f1ej7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_op7ga")
+"texture": ExtResource("10_oprun")
 }],
 "loop": true,
 "name": &"run",
@@ -76,6 +75,7 @@ scale = Vector2(1.6750973, 1.6750973)
 shape = SubResource("RectangleShape2D_q13i1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.3, 1.3)
+position = Vector2(-9e-44, 2.3841858e-07)
+scale = Vector2(0.04824218, 0.04824218)
 sprite_frames = SubResource("SpriteFrames_pylmc")
-animation = &"fall"
+animation = &"run"

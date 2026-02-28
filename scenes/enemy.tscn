@@ -1,34 +1,22 @@
-[gd_scene load_steps=12 format=3 uid="uid://bs61v8ev7hitf"]
+[gd_scene load_steps=9 format=3 uid="uid://bs61v8ev7hitf"]
 
 [ext_resource type="Script" uid="uid://cunmui0at0tiq" path="res://scripts/enemy.gd" id="1_7p1mj"]
-[ext_resource type="Texture2D" uid="uid://nk4dp5ckwtwi" path="res://assets/sprites/enemies/slime.png" id="2_md0e3"]
+[ext_resource type="Texture2D" uid="uid://carkhim0h45r3" path="res://assets_ai/ChatGPT_enemy.png" id="2_md0e3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_md0e3"]
 size = Vector2(20, 4.100689)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
 atlas = ExtResource("2_md0e3")
-region = Rect2(0, 0, 16, 14)
+region = Rect2(0, 0, 341, 341)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
 atlas = ExtResource("2_md0e3")
-region = Rect2(16, 0, 16, 14)
+region = Rect2(341, 0, 341, 341)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
 atlas = ExtResource("2_md0e3")
-region = Rect2(0, 15, 16, 14)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
-atlas = ExtResource("2_md0e3")
-region = Rect2(16, 15, 16, 14)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
-atlas = ExtResource("2_md0e3")
-region = Rect2(0, 30, 16, 14)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_md484"]
-atlas = ExtResource("2_md0e3")
-region = Rect2(16, 30, 16, 14)
+region = Rect2(682, 0, 341, 341)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ipns3"]
 animations = [{
@@ -41,15 +29,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_c4w8v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xwavj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nenq2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_md484")
 }],
 "loop": true,
 "name": &"slime",
@@ -69,7 +48,8 @@ scale = Vector2(1.20462, 6.0050287)
 shape = SubResource("RectangleShape2D_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.5, 1.5)
+position = Vector2(3.9999995, -10)
+scale = Vector2(0.106946476, 0.106946476)
 sprite_frames = SubResource("SpriteFrames_ipns3")
 animation = &"slime"
 
